@@ -80,7 +80,10 @@ return [
 
     'database' => [
         'tables' => [
-            'hidden' => ['migrations', 'data_rows', 'data_types', 'menu_items', 'password_resets', 'permission_role', 'settings'],
+            'hidden' => [
+                'migrations', 'data_rows', 'data_types', 'menu_items', 'password_resets',
+                'permission_role', 'settings', 'failed_jobs','translations',
+            ],
         ],
         'autoload_migrations' => true,
     ],
@@ -99,7 +102,7 @@ return [
         /*
          * Set whether or not the multilingual is supported by the BREAD input.
          */
-        'enabled' => true,
+        'enabled' => false,
 
         /*
          * Select default language
@@ -143,9 +146,7 @@ return [
             ],
         ],
 
-        'widgets' => [
-
-        ],
+        'widgets' => [],
 
     ],
 
@@ -181,7 +182,7 @@ return [
     |
     */
 
-    'primary_color' => '#22A7F0',
+    'primary_color' => '#c21f30',
 
     'show_dev_tips' => true, // Show development tip "How To Use:" in Menu and Settings
 
@@ -195,13 +196,13 @@ return [
     ],
 
     'googlemaps' => [
-         'key'    => env('GOOGLE_MAPS_KEY', ''),
-         'center' => [
-             'lat' => env('GOOGLE_MAPS_DEFAULT_CENTER_LAT', '32.715738'),
-             'lng' => env('GOOGLE_MAPS_DEFAULT_CENTER_LNG', '-117.161084'),
-         ],
-         'zoom' => env('GOOGLE_MAPS_DEFAULT_ZOOM', 11),
-     ],
+        'key'    => env('GOOGLE_MAPS_KEY', ''),
+        'center' => [
+            'lat' => env('GOOGLE_MAPS_DEFAULT_CENTER_LAT', '32.715738'),
+            'lng' => env('GOOGLE_MAPS_DEFAULT_CENTER_LNG', '-117.161084'),
+        ],
+        'zoom' => env('GOOGLE_MAPS_DEFAULT_ZOOM', 11),
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -233,15 +234,15 @@ return [
           'video/mp4',
         ],
         */
-       //Path for media-manager. Relative to the filesystem.
-       'path'                => '/',
-       'show_folders'        => true,
-       'allow_upload'        => true,
-       'allow_move'          => true,
-       'allow_delete'        => true,
-       'allow_create_folder' => true,
-       'allow_rename'        => true,
-       /*'watermark'           => [
+        //Path for media-manager. Relative to the filesystem.
+        'path'                => '/',
+        'show_folders'        => true,
+        'allow_upload'        => true,
+        'allow_move'          => true,
+        'allow_delete'        => true,
+        'allow_create_folder' => true,
+        'allow_rename'        => true,
+        /*'watermark'           => [
             'source'         => 'watermark.png',
             'position'       => 'bottom-left',
             'x'              => 0,
@@ -256,5 +257,5 @@ return [
                 'height'=> 500
            ],
        ]*/
-   ],
+    ],
 ];
