@@ -87,7 +87,25 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2020-01-01 16:03:57',
-                'updated_at' => '2020-01-01 16:40:42',
+                'updated_at' => '2020-01-01 17:51:34',
+            ),
+            4 => 
+            array (
+                'id' => 5,
+                'name' => 'articles',
+                'slug' => 'articles',
+                'display_name_singular' => '文章',
+                'display_name_plural' => '文章',
+                'icon' => 'voyager-markdown',
+                'model_name' => 'App\\Article',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
+                'created_at' => '2020-01-01 17:13:41',
+                'updated_at' => '2020-01-01 17:48:15',
             ),
         ));
         
