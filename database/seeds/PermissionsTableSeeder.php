@@ -297,6 +297,46 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2020-01-01 17:13:41',
                 'updated_at' => '2020-01-01 17:13:41',
             ),
+            35 => 
+            array (
+                'id' => 36,
+                'key' => 'browse_tags',
+                'table_name' => 'tags',
+                'created_at' => '2020-01-02 10:37:04',
+                'updated_at' => '2020-01-02 10:37:04',
+            ),
+            36 => 
+            array (
+                'id' => 37,
+                'key' => 'read_tags',
+                'table_name' => 'tags',
+                'created_at' => '2020-01-02 10:37:04',
+                'updated_at' => '2020-01-02 10:37:04',
+            ),
+            37 => 
+            array (
+                'id' => 38,
+                'key' => 'edit_tags',
+                'table_name' => 'tags',
+                'created_at' => '2020-01-02 10:37:04',
+                'updated_at' => '2020-01-02 10:37:04',
+            ),
+            38 => 
+            array (
+                'id' => 39,
+                'key' => 'add_tags',
+                'table_name' => 'tags',
+                'created_at' => '2020-01-02 10:37:04',
+                'updated_at' => '2020-01-02 10:37:04',
+            ),
+            39 => 
+            array (
+                'id' => 40,
+                'key' => 'delete_tags',
+                'table_name' => 'tags',
+                'created_at' => '2020-01-02 10:37:04',
+                'updated_at' => '2020-01-02 10:37:04',
+            ),
         ));
         
         
