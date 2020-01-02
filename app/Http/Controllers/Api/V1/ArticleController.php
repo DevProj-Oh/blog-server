@@ -14,4 +14,11 @@ class ArticleController extends Controller
 
         return $this->response->collection($articles, ArticleTransformer::class);
     }
+
+    public function show(Article $article)
+    {
+        $article->load(['category', 'tags']);
+
+        return $this->response->item($article, ArticleTransformer::class);
+    }
 }
