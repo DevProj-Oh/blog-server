@@ -16,7 +16,7 @@ class Article extends Model
 
     public function tags()
     {
-        return $this->belongsToMany(Tag::class, 'articles_and_roles', 'article_id', 'tag_id');
+        return $this->belongsToMany(Tag::class, 'articles_and_tags', 'article_id', 'tag_id');
     }
 
     public function setMarkdownContentAttribute($markdownContent)
