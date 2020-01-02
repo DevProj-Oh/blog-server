@@ -10,7 +10,7 @@ class TagController extends Controller
 {
     public function index()
     {
-        $tags = Tag::all();
+        $tags = Tag::withCount('articles')->get();
 
         return $this->response->collection($tags, TagTransformer::class);
     }
